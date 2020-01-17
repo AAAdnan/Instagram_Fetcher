@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { INSTAGRAM_APIKEY, REDIRECT_URL } from './config.js'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        { INSTAGRAM_APIKEY}
+        { REDIRECT_URL }
       </header>
     </div>
   );
