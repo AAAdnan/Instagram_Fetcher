@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Facebook from './components/Facebook';
 import { INSTAGRAM_APIKEY, REDIRECT_URL } from './config.js'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <header>
         <p>Welcome to the Instagram Fetcher</p>
-        <p>{REDIRECT_URL}</p>
+        <h1 className="App-title">Facebook Auth Example</h1>
+        <Facebook />
       </header>
       <div>
         <a href={`https://api.instagram.com/oauth/authorize
